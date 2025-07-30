@@ -1,0 +1,29 @@
+--[[
+Super Strong Lua Obfuscator Template
+
+Insert your advanced obfuscation logic here.
+Some techniques to implement:
+- Identifier renaming
+- String encryption
+- Control flow flattening
+- Junk code insertion
+- Dynamic code generation
+- Remove formatting
+- Self-modifying code
+- Anti-tamper/anti-debugging
+
+Below is a basic passthrough, replace with your own implementation.
+]]
+
+local input_file = arg[1]
+local f = io.open(input_file, "r")
+local code = f:read("*a")
+f:close()
+
+-- Add watermark at the top
+local watermark = "-- This file has been obfuscated by Passive V1\n"
+
+-- TODO: Replace with your real obfuscation logic!
+local obfuscated = watermark .. "-- [OBFUSCATED]\n" .. code
+
+print(obfuscated)
